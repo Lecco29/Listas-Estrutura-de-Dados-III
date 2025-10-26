@@ -145,13 +145,13 @@ int fatorial_duplo(int n) {
 int main() {
     
     // Teste Exercício 1
-    printf("1. Inverter numero 123: %d\n", inverterNumero(123, 0));
+    printf("1. Inverter numero 123: %d\n", inverter_numero(123, 0));
     printf("   Explicacao: 123 -> 321 (inverte os digitos)\n\n");
     
     // Teste Exercício 2
     int vetor[] = {1, 2, 3, 4, 5};
     int tamanho = 5;
-    printf("2. Soma do vetor {1,2,3,4,5}: %d\n", somarVetor(vetor, tamanho, 0));
+    printf("2. Soma do vetor {1,2,3,4,5}: %d\n", somar_vetor(vetor, tamanho, 0));
     
     // Teste Exercício 3
     printf("3. Somatorio de 1 a 5: %d\n", somatorio(5));
@@ -165,7 +165,7 @@ int main() {
     for (int i = 0; i < 5; i++) {
         printf("%.1f ", vetorFloat[i]);
     }
-    inverterVetor(vetorFloat, 0, 4);
+    inverter_vet(vetorFloat, 0, 4);
     printf("\n   Vetor invertido: ");
     for (int i = 0; i < 5; i++) {
         printf("%.1f ", vetorFloat[i]);
@@ -175,25 +175,25 @@ int main() {
     printf("6. MDC de 48 e 18: %d\n", mdc(48, 18));
   
     // Teste Exercício 7
-    printf("7. Ocorrencias do digito 2 em 762021192: %d\n", contarDigito(762021192, 2));
+    printf("7. Ocorrencias do digito 2 em 762021192: %d\n", contar_di(762021192, 2));
     
     // Teste Exercício 8
     printf("8. 3 * 4 = %d\n", multiplicar(3, 4));
     
     // Teste Exercício 9
     printf("9. Numeros pares de 0 a 8 (crescente): ");
-    imprimirParesCrescente(8);
+    imprimir_pares_cres(8);
     
     // Teste Exercício 10
     printf("10. Numeros de 0 a 5 (decrescente): ");
-    imprimirDecrescente(5);
+    decrescent(5);
     
     // Teste Exercício 11
     printf("11. Numeros pares de 0 a 8 (decrescente): ");
-    imprimirParesDecrescente(8);
+    pares_decrescente(8);
     
     // Teste Exercício 12
-    printf("12. Fatorial duplo de 5: %d\n", fatorialDuplo(5));
+    printf("12. Fatorial duplo de 5: %d\n", fatorial_duplo(5));
 
     return 0;
 }
